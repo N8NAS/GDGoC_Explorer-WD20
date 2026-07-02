@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#skills">My Skills</a>
+            <button id="theme-toggle">Dark Mode</button>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Hi, I'm Nathan!</h1>
+            <p>I am a Computer Science student at ITB. I'm currently learning web development and robotics.</p>
+        </section>
+        <section id="skills">
+            <h2>
+                Technologies I Plan To Learn
+            </h2>
+            <ul>    
+                <li>Javascript</li>
+                <li>Kotlin</li>
+                <li>Go</li>
+                <li>React</li>
+            </ul>
+
+        </section>
+    </main>
+    <footer>
+        <p>
+            Contact me at: nathan.santosa37@gmail.com
+        </p>
+    </footer>
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+
+</html>

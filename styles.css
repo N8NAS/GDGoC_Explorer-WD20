@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: var(--color-surface);
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+body{
+    font-family: 'Segoe UI';
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section{
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+footer{
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--color-text);
+}
+
+button{
+    cursor: pointer; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    border: 1px solid var(--color-text); 
+    background: var(--color-surface); 
+    color: var(--color-text);
+}
+
+
+:root{
+    --color-bg: #f8f9fa;
+    --color-text: #333333;
+    --color-primary: #2563eb;
+    --color-surface: #ffffff;
+}
+
+body.dark-mode {
+    --color-bg: #121212;
+    --color-text: #e0e0e0;
+    --color-primary: #60a5fa;
+    --color-surface: #1e1e1e;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); 
+    }
+    to {
+        opacity: 1;                  
+        transform: translateY(0);   
+    }
+}
+
+#hero {
+    text-align: center;
+    animation: fadeInDown 1.5s ease-in; 
+}
