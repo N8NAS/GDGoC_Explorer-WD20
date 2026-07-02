@@ -84,3 +84,22 @@ body.dark-mode {
     text-align: center;
     animation: fadeInDown 1.5s ease-in; 
 }
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+    
+    footer {
+        padding: 40px 15px;
+    }
+
+    #hero h1 {
+        font-size: 1.8rem;
+    }
+}
